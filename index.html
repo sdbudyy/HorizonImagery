@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Curtain Media</title>
+
+    <style>
+        /* Basic styling for the website */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+background-color: black;
+color: whitesmoke;
+}
+
+
+/* Apply a background image to the hero section */
+.hero {
+    background-image: url('drone1.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 450px 0;
+    backdrop-filter: blur(10px);
+}
+
+/* Style navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style service cards */
+.services {
+    padding: 50px 0;
+    text-align: center;
+   
+}
+
+.service-card {
+    margin: 20px;
+}
+
+
+/* Style the contact form */
+.contact {
+    background-color: rgba(169, 169, 169, 0.061);
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Define the default styles for the element */
+.element {
+    color: whitesmoke; /* Default text color */
+    font-size: 70px; /* Default font size */
+    transition: color 0.3s, font-size 0.3s; /* Add a transition effect for smooth change */
+}
+
+/* Define the styles when hovering over the element */
+.element:hover {
+    color:cornflowerblue;/* New text color on hover */
+    font-size: 75px; /* New font size on hover */
+}
+
+/* Define the default button styles */
+.hover-button {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for smooth change */
+}
+
+/* Define the button styles when hovered */
+.hover-button:hover {
+    background-color: #0056b3; /* New background color on hover */
+    color: #fff; /* New text color on hover */
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 22px;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Blue Curtain Media</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1 class="element">Welcome to Blue Curtain Media</h1>
+        <p>Discover the world from a new perspective with our drone photography services.</p>
+        <br> 
+        <a href="#services" class="hover-button">Explore Services</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2 style="font-size: 60px;">Our Services</h2>
+        <div class="service-card">
+            <img style="height: 1000px; width: 2000px;:;" src="bird-eye.gif" alt="Drone Service 1">
+            <h3>Aerial Photography</h3>
+            <p>Capture stunning aerial photos of your property or event.</p>
+        </div>
+        <div class="service-card">
+            <img src="drone-service-2.jpg" alt="Drone Service 2">
+            <h3>Video Tours</h3>
+            <p>Show off your property with high-quality drone video tours.</p>
+        </div>
+        <!-- Add more service cards as needed -->
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Add your portfolio images and descriptions here -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to elevate your visuals? Contact us for a quote or any inquiries.</p>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Blue Curtain Media</p>
+    </footer>
+
+</body>
+</html>
